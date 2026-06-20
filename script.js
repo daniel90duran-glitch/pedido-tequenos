@@ -40,10 +40,9 @@ orderForm.addEventListener('submit', function(e) {
     const total = totalPriceEl.textContent;
 
     // =========================================================================
-    // ⚠️ CAMBIA EL NÚMERO DE ABAJO POR TU NÚMERO REAL
-    // Recuerda dejar el '51' al inicio de Perú, sin espacios, guiones ni el '+'
+    // ⚠️ PON AQUÍ TU NÚMERO TELEFÓNICO REAL (Con el 51 de Perú adelante)
     // =========================================================================
-    const myWhatsAppNumber = "51910381084"; 
+    const myWhatsAppNumber = "51987654321"; 
 
     // Construir el mensaje de texto limpio para WhatsApp
     const message = "*NUEVO PEDIDO DE TEQUEÑOS* 🥟\n\n" +
@@ -53,9 +52,9 @@ orderForm.addEventListener('submit', function(e) {
                     "*Pedido:* " + quantity + " docena(s)\n" +
                     "*Total a pagar:* " + total;
 
-    // Enlace universal y seguro de WhatsApp que funciona en todas las marcas de celulares
+    // Enlace universal y seguro de WhatsApp (API oficial)
     const whatsappUrl = "https://wa.me/" + myWhatsAppNumber + "?text=" + encodeURIComponent(message);
 
-    // Redirección directa y segura en la misma pestaña (evita bloqueos del navegador)
+    // Redirección en la misma pestaña para máxima compatibilidad móvil
     window.location.href = whatsappUrl;
 });

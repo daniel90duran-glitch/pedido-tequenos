@@ -7,6 +7,8 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .form-container {
@@ -16,12 +18,14 @@ body {
     box-shadow: 0 8px 24px rgba(209, 109, 61, 0.15);
     width: 100%;
     max-width: 450px;
+    box-sizing: border-box;
 }
 
 h2 {
     color: #d16d3d;
     text-align: center;
     margin-top: 0;
+    font-size: 24px;
 }
 
 .promo-tag {
@@ -44,21 +48,50 @@ label {
     margin-bottom: 8px;
     color: #4a4a4a;
     font-weight: 600;
+    font-size: 14px;
+}
+
+/* --- Contenedor nuevo para alinear iconos dentro de los inputs --- */
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Iconos de entrada estilizados */
+.input-icon {
+    position: absolute;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    color: #a0a0a0; /* Color gris suave elegante */
+    pointer-events: none;
+    transition: color 0.3s;
 }
 
 input {
     width: 100%;
-    padding: 12px;
+    padding: 12px 12px 12px 42px; /* Espacio extra a la izquierda para que no choque con el icono */
     border: 2px solid #e4e1d9;
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 16px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #faf9f6;
 }
 
+/* Efecto cuando el cliente da clic para escribir */
 input:focus {
     border-color: #d16d3d;
+    background-color: #ffffff;
     outline: none;
+    box-shadow: 0 0 8px rgba(209, 109, 61, 0.15);
+}
+
+/* El icono cambia al color naranja del negocio cuando el input está activo */
+.input-with-icon input:focus + .input-icon,
+.input-with-icon input:focus ~ .input-icon {
+    color: #d16d3d;
 }
 
 .price-summary {
@@ -66,7 +99,7 @@ input:focus {
     padding: 15px;
     border-radius: 8px;
     border-left: 5px solid #d16d3d;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .price-summary p {
@@ -87,9 +120,75 @@ input:focus {
     margin-top: 5px;
 }
 
+/* Contenedor Morado de Yape */
+.yape-container {
+    background-color: #742383; 
+    color: white;
+    padding: 22px 15px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 14px rgba(116, 35, 131, 0.25);
+}
+
+.yape-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.yape-badge-button {
+    background-color: #00d3b6; 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 85%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.yape-logo-svg {
+    width: 32px;
+    height: 32px;
+}
+
+.yape-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.3px;
+}
+
+.yape-label-num {
+    font-size: 16px;
+    margin: 0;
+    opacity: 0.85;
+}
+
+.yape-number {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 2px 0 12px 0;
+    letter-spacing: 1px;
+}
+
+.yape-instruction {
+    font-size: 13px;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* Botón Verde WhatsApp de envío */
 .btn-submit {
     width: 100%;
-    background-color: #25d366; /* Verde WhatsApp */
+    background-color: #25d366; 
     color: white;
     border: none;
     padding: 14px;
