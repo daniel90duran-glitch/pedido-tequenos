@@ -42,7 +42,7 @@ orderForm.addEventListener('submit', function(e) {
     // =========================================================================
     // ⚠️ PON AQUÍ TU NÚMERO TELEFÓNICO REAL (Con el 51 de Perú adelante)
     // =========================================================================
-    const myWhatsAppNumber = "51987654321"; 
+    const myWhatsAppNumber = "51910381084"; 
 
     // Construir el mensaje de texto limpio para WhatsApp
     const message = "*NUEVO PEDIDO DE TEQUEÑOS* 🥟\n\n" +
