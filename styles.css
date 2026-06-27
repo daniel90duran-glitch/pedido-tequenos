@@ -22,11 +22,10 @@ body {
     overflow: hidden;
 }
 
-/* --- Contenedor optimizado para tu ilustración --- */
 .header-image-container {
     width: 100%;
-    height: 200px; /* Un poco más alto para lucir el dibujo completo */
-    background-color: #ffffff; /* Fondo blanco que combina con el fondo de tu dibujo */
+    height: 200px;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +35,7 @@ body {
 .header-banner {
     max-width: 90%;
     height: 100%;
-    object-fit: contain; /* Evita que la ilustración se corte o deforme */
+    object-fit: contain;
 }
 
 h2 {
@@ -138,70 +137,31 @@ input:focus {
     margin-top: 5px;
 }
 
-.yape-container {
-    background-color: #742383; 
-    color: white;
-    padding: 22px 15px;
-    border-radius: 12px;
+/* --- Contenedor para el nuevo QR Completo --- */
+.qr-container {
     text-align: center;
     margin-bottom: 25px;
-    box-shadow: 0 4px 14px rgba(116, 35, 131, 0.25);
 }
 
-.yape-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 0 15px 0;
+.qr-yape-full {
+    width: 100%;
+    max-width: 320px; /* Tamaño ideal y legible en pantallas móviles */
+    height: auto;
+    border-radius: 18px; /* Redondeado idéntico al diseño de Yape */
+    box-shadow: 0 4px 14px rgba(116, 35, 131, 0.2);
+    display: block;
+    margin: 0 auto;
 }
 
-.yape-badge-button {
-    background-color: #00d3b6; 
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    width: 85%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.yape-logo-svg {
-    width: 32px;
-    height: 32px;
-}
-
-.yape-name {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0 0 8px 0;
-    letter-spacing: 0.3px;
-}
-
-.yape-label-num {
-    font-size: 16px;
-    margin: 0;
-    opacity: 0.85;
-}
-
-.yape-number {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 2px 0 12px 0;
-    letter-spacing: 1px;
-}
-
-.yape-instruction {
+.qr-instruction {
     font-size: 13px;
-    margin: 0;
-    opacity: 0.9;
+    color: #666666;
+    margin-top: 10px;
     line-height: 1.4;
+    padding: 0 10px;
 }
 
+/* Botón Verde WhatsApp */
 .btn-submit {
     width: 100%;
     background-color: #25d366; 
