@@ -13,19 +13,41 @@ body {
 
 .form-container {
     background-color: #ffffff;
-    padding: 30px;
+    padding: 0 0 30px 0;
     border-radius: 15px;
     box-shadow: 0 8px 24px rgba(209, 109, 61, 0.15);
     width: 100%;
     max-width: 450px;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* --- Contenedor optimizado para tu ilustración --- */
+.header-image-container {
+    width: 100%;
+    height: 200px; /* Un poco más alto para lucir el dibujo completo */
+    background-color: #ffffff; /* Fondo blanco que combina con el fondo de tu dibujo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.header-banner {
+    max-width: 90%;
+    height: 100%;
+    object-fit: contain; /* Evita que la ilustración se corte o deforme */
 }
 
 h2 {
     color: #d16d3d;
     text-align: center;
-    margin-top: 0;
-    font-size: 24px;
+    margin: 15px 0 5px 0;
+    font-size: 26px;
+}
+
+form {
+    padding: 0 30px;
 }
 
 .promo-tag {
@@ -36,7 +58,7 @@ h2 {
     border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin: 0 30px 25px 30px;
 }
 
 .form-group {
@@ -51,27 +73,25 @@ label {
     font-size: 14px;
 }
 
-/* --- Contenedor nuevo para alinear iconos dentro de los inputs --- */
 .input-with-icon {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-/* Iconos de entrada estilizados */
 .input-icon {
     position: absolute;
     left: 12px;
     width: 20px;
     height: 20px;
-    color: #a0a0a0; /* Color gris suave elegante */
+    color: #a0a0a0;
     pointer-events: none;
     transition: color 0.3s;
 }
 
 input {
     width: 100%;
-    padding: 12px 12px 12px 42px; /* Espacio extra a la izquierda para que no choque con el icono */
+    padding: 12px 12px 12px 42px;
     border: 2px solid #e4e1d9;
     border-radius: 8px;
     box-sizing: border-box;
@@ -80,7 +100,6 @@ input {
     background-color: #faf9f6;
 }
 
-/* Efecto cuando el cliente da clic para escribir */
 input:focus {
     border-color: #d16d3d;
     background-color: #ffffff;
@@ -88,7 +107,6 @@ input:focus {
     box-shadow: 0 0 8px rgba(209, 109, 61, 0.15);
 }
 
-/* El icono cambia al color naranja del negocio cuando el input está activo */
 .input-with-icon input:focus + .input-icon,
 .input-with-icon input:focus ~ .input-icon {
     color: #d16d3d;
@@ -120,7 +138,6 @@ input:focus {
     margin-top: 5px;
 }
 
-/* Contenedor Morado de Yape */
 .yape-container {
     background-color: #742383; 
     color: white;
@@ -185,7 +202,6 @@ input:focus {
     line-height: 1.4;
 }
 
-/* Botón Verde WhatsApp de envío */
 .btn-submit {
     width: 100%;
     background-color: #25d366; 
