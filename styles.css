@@ -22,31 +22,34 @@ body {
     overflow: hidden;
 }
 
-/* --- Cabecera de borde a borde (Ocupa todo el espacio) --- */
+/* --- Cabecera con Logotipo más Grande y Organizado --- */
 .header-image-container {
     width: 100%;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0; /* Eliminamos los espacios internos para que se pegue a los bordes */
+    padding: 30px 0 10px 0; /* Espaciado generoso para que respire el logo */
     margin: 0;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .header-banner {
-    width: 100%;
-    max-width: 380px; /* Un tamaño masivo que cubre casi todo el ancho pero respeta la curvatura del formulario */
-    height: auto;
+    width: 85%;        /* Incrementamos el tamaño para que sea notablemente más grande */
+    max-width: 340px;  /* Límite ideal para que no se desborde en pantallas pequeñas */
+    height: auto;      /* Mantiene la proporción perfecta del círculo */
     display: block;
-    padding: 10px 0;  /* Pequeño respiro arriba y abajo para que luzca perfecto */
 }
 
+/* --- Título Principal Centrado a la Fuerza --- */
 h2 {
     color: #d16d3d;
     text-align: center;
-    margin: 10px 0 5px 0;
-    font-size: 26px;
+    width: 100%;       /* Obliga al título a tomar todo el ancho para poder centrarse */
+    margin: 20px auto 5px auto;
+    font-size: 28px;   /* Un toque más grande para que haga balance con el logo */
+    display: block;
+    clear: both;       /* Evita que cualquier elemento de arriba lo empuje hacia un lado */
 }
 
 form {
