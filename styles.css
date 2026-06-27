@@ -22,23 +22,24 @@ body {
     overflow: hidden;
 }
 
-/* --- Ajuste para que el Logotipo se vea más grande y destacado --- */
+/* --- Cabecera de borde a borde (Ocupa todo el espacio) --- */
 .header-image-container {
     width: 100%;
-    /* Eliminamos la altura fija limitante para que el logo se expanda de forma natural */
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 0 10px 0; /* Espaciado generoso arriba y abajo */
+    padding: 0; /* Eliminamos los espacios internos para que se pegue a los bordes */
+    margin: 0;
+    overflow: hidden;
 }
 
 .header-banner {
-    width: 100%;
-    max-width: 280px; /* Controla el tamaño exacto aquí. Si lo quieres aún más grande, súbelo a 300px o 320px */
-    height: auto;     /* Permite que la altura se adapte automáticamente sin deformar el círculo */
-    object-fit: contain;
-}
+    width: 100%;       /* Obliga a la imagen a estirarse a todo el ancho disponible */
+    max-width: 100%;   /* Remueve cualquier límite anterior de 280px */
+    height: auto;      /* Mantiene la proporción perfecta del círculo sin deformarlo */
+    display: block;    /* Elimina espacios vacíos rebeldes en la parte inferior */
+    object-fit: cover; /* Asegura un llenado completo del área */
 }
 
 h2 {
