@@ -1,7 +1,9 @@
-/* Estilos Globales con tonos cálidos de comida */
+/* ==========================================
+   1. ESTILOS GLOBALES Y CONTENEDOR PRINCIPAL
+   ========================================== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fceade;
+    background-color: #fceade; /* Fondo cálido tono comida */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,49 +24,55 @@ body {
     overflow: hidden;
 }
 
-/* --- Cabecera con Logotipo más Grande y Organizado --- */
+/* ==========================================
+   2. CABECERA: LOGOTIPO IMPONENTE Y TÍTULO
+   ========================================== */
 .header-image-container {
     width: 100%;
     background-color: #ffffff;
     display: flex;
+    flex-direction: column; /* Alinea el logo y el texto verticalmente */
     justify-content: center;
     align-items: center;
-    padding: 30px 0 10px 0; /* Espaciado generoso para que respire el logo */
+    padding: 35px 0 10px 0; /* Espaciado para dar presencia al logo */
     margin: 0;
     box-sizing: border-box;
 }
 
 .header-banner {
-    width: 85%;        /* Incrementamos el tamaño para que sea notablemente más grande */
-    max-width: 340px;  /* Límite ideal para que no se desborde en pantallas pequeñas */
-    height: auto;      /* Mantiene la proporción perfecta del círculo */
+    width: 90%;        /* Logotipo grande y destacado */
+    max-width: 360px;  /* Límite para pantallas móviles */
+    height: auto;      /* Mantiene la proporción circular perfecta */
     display: block;
 }
 
-/* --- Título Principal Centrado a la Fuerza --- */
 h2 {
-    color: #d16d3d;
-    text-align: center;
-    width: 100%;       /* Obliga al título a tomar todo el ancho para poder centrarse */
-    margin: 20px auto 5px auto;
-    font-size: 28px;   /* Un toque más grande para que haga balance con el logo */
+    color: #000000;    /* Negro sólido idéntico a la muestra */
+    text-align: center;/* Centrado horizontal absoluto */
+    width: 100%;       
+    margin: 20px auto 10px auto;
+    font-size: 32px;   /* Tamaño grande e imponente */
+    font-weight: bold;
     display: block;
-    clear: both;       /* Evita que cualquier elemento de arriba lo empuje hacia un lado */
+    clear: both;       
 }
 
+/* ==========================================
+   3. SECCIÓN DE FORMULARIO Y CAMPOS
+   ========================================== */
 form {
     padding: 0 30px;
 }
 
 .promo-tag {
-    background-color: #5d7247;
+    background-color: #5d7247; /* Verde oliva para la promoción */
     color: white;
     text-align: center;
     padding: 8px;
     border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
-    margin: 0 30px 25px 30px;
+    margin: 0 0 25px 0;
 }
 
 .form-group {
@@ -113,11 +121,15 @@ input:focus {
     box-shadow: 0 0 8px rgba(209, 109, 61, 0.15);
 }
 
-.input-with-icon input:focus + .input-icon,
-.input-with-icon input:focus ~ .input-icon {
+/* Cambio de color del icono cuando el input está activo */
+.input-with-icon input:focus ~ .input-icon,
+.input-with-icon input:focus + .input-icon {
     color: #d16d3d;
 }
 
+/* ==========================================
+   4. RESUMEN DE PRECIOS
+   ========================================== */
 .price-summary {
     background-color: #fdf8f2;
     padding: 15px;
@@ -144,7 +156,9 @@ input:focus {
     margin-top: 5px;
 }
 
-/* --- QR de Yape --- */
+/* ==========================================
+   5. CONTENEDOR DEL QR DE YAPE
+   ========================================== */
 .qr-container {
     text-align: center;
     margin-bottom: 25px;
@@ -168,10 +182,12 @@ input:focus {
     padding: 0 10px;
 }
 
-/* Botón WhatsApp */
+/* ==========================================
+   6. BOTÓN DE ENVÍO (WHATSAPP)
+   ========================================== */
 .btn-submit {
     width: 100%;
-    background-color: #25d366; 
+    background-color: #25d366; /* Verde WhatsApp */
     color: white;
     border: none;
     padding: 14px;
