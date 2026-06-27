@@ -35,11 +35,11 @@ body {
 }
 
 .header-banner {
-    width: 100%;       /* Obliga a la imagen a estirarse a todo el ancho disponible */
-    max-width: 100%;   /* Remueve cualquier límite anterior de 280px */
-    height: auto;      /* Mantiene la proporción perfecta del círculo sin deformarlo */
-    display: block;    /* Elimina espacios vacíos rebeldes en la parte inferior */
-    object-fit: cover; /* Asegura un llenado completo del área */
+    width: 100%;
+    max-width: 380px; /* Un tamaño masivo que cubre casi todo el ancho pero respeta la curvatura del formulario */
+    height: auto;
+    display: block;
+    padding: 10px 0;  /* Pequeño respiro arriba y abajo para que luzca perfecto */
 }
 
 h2 {
