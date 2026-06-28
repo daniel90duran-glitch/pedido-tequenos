@@ -46,15 +46,15 @@ body {
     display: block;
 }
 
-h2 {
+.header-title {
     color: #000000;    /* Negro sólido idéntico a la muestra */
     text-align: center;/* Centrado horizontal absoluto */
-    width: 100%;       
-    margin: 20px auto 10px auto;
+    width: calc(100% - 30px);
+    margin: 14px auto 22px auto;
     font-size: 32px;   /* Tamaño grande e imponente */
     font-weight: bold;
     display: block;
-    clear: both;       
+    max-width: 420px;
 }
 
 /* ==========================================
